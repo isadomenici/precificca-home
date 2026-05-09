@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Precificca</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+       body {
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+      background: black;
+    }
+
+    .hero {
+      position: relative;
+      width: 100vw;
+      min-height: 135vh;
+    
+      background:
+        linear-gradient(
+          rgba(0,0,0,0.12),
+          rgba(0,0,0,0.22)
+        ),
+        url('fundo_home.jpg');
+    
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    
+      display: flex;
+      flex-direction: column;
+    
+      padding: 42px 72px 120px;
+    }
+    
+    .top-logo {
+      width: 130px;
+      height: auto;
+    
+      margin-top: 10px;
+      margin-left: 6px;
+    }
+    
+    .main-title {
+      position: absolute;
+      top: 150px;
+      left: 72px;
+    
+      font-size: clamp(86px, 10.5vw, 180px);
+      font-weight: 800;
+      letter-spacing: -7px;
+      line-height: 0.9;
+    
+      color: white;
+    }
+    
+    .bottom-area {
+      margin-top: auto;
+    
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    
+      gap: 40px;
+    
+      padding-top: 600px;
+    }
+    
+    .tagline {
+      max-width: 620px;
+    
+      font-size: clamp(48px, 5.2vw, 88px);
+      font-weight: 400;
+      line-height: 0.95;
+      letter-spacing: -3px;
+    
+      color: white;
+    }
+    
+    .actions {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-bottom: 26px;
+    }
+
+    .action-btn {
+      min-width: 320px;
+
+      padding: 16px 28px;
+
+      border: 1.5px solid rgba(255,255,255,0.85);
+      border-radius: 999px;
+
+      background: rgba(255,255,255,0.04);
+      backdrop-filter: blur(5px);
+
+      color: white;
+
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      transition:
+        background .18s ease,
+        transform .18s ease,
+        border-color .18s ease;
+    }
+
+    .action-btn:hover {
+      background: rgba(255,255,255,0.12);
+      transform: translateY(-1px);
+      border-color: white;
+    }
+
+    @media (max-width: 980px) {
+
+      body {
+        overflow-y: auto;
+      }
+
+      .hero {
+        min-height: 100vh;
+        height: auto;
+
+        padding: 32px 28px 42px;
+      }
+
+      .top-logo {
+        width: 140px;
+      }
+
+      .main-title {
+        margin-top: 18px;
+
+        font-size: 72px;
+        letter-spacing: -3px;
+      }
+
+      .bottom-area {
+        margin-top: 80px;
+
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .tagline {
+        font-size: 54px;
+        letter-spacing: -2px;
+      }
+
+      .actions {
+        width: 100%;
+      }
+
+      .action-btn {
+        width: 100%;
+        min-width: unset;
+      }
+    }
+
+    @media (max-width: 640px) {
+
+      .main-title {
+        font-size: 56px;
+      }
+
+      .tagline {
+        font-size: 42px;
+        line-height: 1;
+      }
+
+      .action-btn {
+        font-size: 12px;
+        padding: 15px 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="hero">
+
+    <img
+      src="Horizontal_Branco.png"
+      alt="Ricca Sustentabilidade"
+      class="top-logo"
+    >
+
+    <h1 class="main-title">
+      Precificca
+    </h1>
+
+    <div class="bottom-area">
+
+      <div class="tagline">
+        Propostas<br>
+        rápidas e<br>
+        assertivas
+      </div>
+
+      <div class="actions">
+
+        <a
+          href="anamnese.html"
+          class="action-btn"
+        >
+          Anamnese Comercial
+        </a>
+
+        <a
+          href="index.html"
+          class="action-btn"
+        >
+          Simular Proposta
+        </a>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
+</html>
